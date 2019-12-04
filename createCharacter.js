@@ -46,18 +46,15 @@ const characters = [
 
 const [gandalf, biblo, frodo, aragorn, legolas] = characters;
 
-function addArwen() {
-  let Arwen = createCharacter(
-    'Arwen Undomiel',
-    'arwen',
-    'Elf',
-    'Rivendell',
-    7,
-    9
-  );
-  characters.push(Arwen);
-  return Arwen;
-}
-addArwen();
+let Arwen = createCharacter(
+  'Arwen Undomiel',
+  'arwen',
+  'Elf',
+  'Rivendell',
+  7,
+  9
+);
+characters.push(Arwen);
+
 console.log(gandalf.describe());
 console.log(Arwen.evaluateFight(gandalf));
